@@ -1,0 +1,29 @@
+[hub]
+  protocol = https
+[user]
+  name = Gregory Eremin
+  email = magnolia_fan@me.com
+[credential]
+  helper = osxkeychain
+[alias]
+  co = checkout
+  br = checkout -b
+  st = status -sb
+  ci = commit -m
+  ca = commit -am
+[color]
+  diff = auto
+  status = auto
+  branch = auto
+  ui = true
+[core]
+  excludesfile = ~/.gitignore
+  editor = subl -n -w
+[apply]
+  whitespace = nowarn
+[mergetool]
+  keepBackup = false
+[difftool]
+  prompt = false
+[help]
+  autocorrect = 1

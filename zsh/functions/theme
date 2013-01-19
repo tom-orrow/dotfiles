@@ -1,0 +1,12 @@
+local sublime_conf_location=~/Library/Application\ Support/Sublime\ Text\ 2/Packages/User/Preferences.sublime-settings
+local theme="$1"
+
+case $theme in
+light|dark)
+  local sublime_conf_file="$ZSH/sublime/config-$theme" ;;
+*)
+  local sublime_conf_file="$ZSH/sublime/config-dark" ;;
+esac
+
+rm $sublime_conf_location
+cp $sublime_conf_file $sublime_conf_location
