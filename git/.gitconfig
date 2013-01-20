@@ -1,10 +1,8 @@
 [hub]
   protocol = https
 [user]
-  name = Gregory Eremin
-  email = magnolia_fan@me.com
-[credential]
-  helper = osxkeychain
+  name = Andrey Yuferov
+  email = asjuferov@gmail.com
 [alias]
   co = checkout
   br = checkout -b

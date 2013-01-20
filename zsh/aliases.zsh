@@ -1,6 +1,8 @@
 alias reload!='. ~/.zshrc'
 alias b='bundle exec'
 alias please='sudo'
+alias subl="sublime-text"
+alias ls='ls --color'
 
 # Services start-ups and shut-downs
 

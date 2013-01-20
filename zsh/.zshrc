@@ -20,3 +20,7 @@ compinit
 
 # load every completion after autocomplete loads
 # for config_file ($ZSH/**/completion.sh) source $config_file
+
+# configuring dircolors
+export LS_COLORS="$ZSH/zsh/.dircolors"
+eval `dircolors $ZSH/zsh/.dircolors`

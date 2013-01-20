@@ -54,10 +54,14 @@ current_time(){
 }
 
 directory_name(){
-  echo "%{$fg_bold[blue]%}%1/%\%{$reset_color%}"
+  echo "%{$fg_bold[magenta]%}%1/%\%{$reset_color%}"
 }
 
-export PROMPT=$'\n$(directory_name)$(git_dirty)$(need_push) › '
+suffix(){
+  echo "%{$fg_bold[cyan]%} › %{$reset_color%}"
+}
+
+export PROMPT=$'\n$(directory_name)$(git_dirty)$(need_push)$(suffix)'
 set_prompt () {
   export RPROMPT="$(rb_prompt)"
 }
