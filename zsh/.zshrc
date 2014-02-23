@@ -24,3 +24,6 @@ compinit
 # configuring dircolors
 export LS_COLORS="$ZSH/zsh/.dircolors"
 eval `dircolors $ZSH/zsh/.dircolors`
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"

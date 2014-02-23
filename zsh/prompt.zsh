@@ -12,9 +12,9 @@ git_dirty() {
   then
     echo ""
   else
-    if [[ $st == "nothing to commit (working directory clean)" ]]
+    if [[ $st =~ ^.*nothing.+to.+commit.*$ ]]
     then
-      echo " %{$fg_bold[green]%}($(git_prompt_info))%{$reset_color%}"
+      echo " %F{002}($(git_prompt_info))%f"
     else
       echo " %{$fg_bold[red]%}($(git_prompt_info))%{$reset_color%}"
     fi
@@ -23,7 +23,6 @@ git_dirty() {
 
 git_prompt_info () {
  ref=$(/usr/bin/git symbolic-ref HEAD 2>/dev/null) || return
-# echo "(%{\e[0;33m%}${ref#refs/heads/}%{\e[0m%})"
  echo "${ref#refs/heads/}"
 }
 
