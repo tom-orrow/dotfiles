@@ -26,4 +26,4 @@ export LS_COLORS="$ZSH/zsh/.dircolors"
 eval `dircolors $ZSH/zsh/.dircolors`
 
 ### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
+export PATH="/home/tomorrow/android-sdk-linux/build-tools/21.1.1/:/home/tomorrow/android-sdk-linux/tools/:/usr/local/heroku/bin:$PATH"
